@@ -23,7 +23,6 @@
  */
 
 require_once('config.php');
-
 $setmode = optional_param('setmode', false, PARAM_BOOL);
 $contextid = required_param('context', PARAM_INT);
 $pageurl = required_param('pageurl', PARAM_LOCALURL);
@@ -33,6 +32,7 @@ $pageurl = required_param('pageurl', PARAM_LOCALURL);
 if (!defined('BEHAT_SITE_RUNNING')) {
     require_sesskey();
 }
+
 
 require_login();
 
